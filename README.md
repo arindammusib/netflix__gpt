@@ -2,9 +2,13 @@
 - create React app
 - configured tailwind css
 - header
+- Routing configuration
 - login form
 - sign up form
-   - form validation
+   - form validation(using regex)
+   - useRef hook
+- Authentication
+  - using Google Firebase  
 
 # features
 - log in and sign up form
