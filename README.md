@@ -24,6 +24,10 @@
 - update sore with trailer data
 - embedded the youtube trailer video 
 - styling with tailwind css
+- create custom hooks for different movie section
+- fetch  different movies section api from tmdb
+- update store with movies section data
+- styling for main container and secondary container
 
 
 

@@ -46,7 +46,7 @@ const Header=()=>{
             {user && (
             <div className="flex py-4">
                 <img className="w-10 h-10 "src={user_icon} alt="user-icon"/>
-            <button onClick={signOutHandler}className="w-10 h-10">Sign Out</button>
+            <button onClick={signOutHandler}className="w-10 h-10 text-white">Sign Out</button>
             </div>
             )}
 
