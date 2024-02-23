@@ -13,6 +13,8 @@ const MovieList=({title,movies})=>{
                 </div>
 
             </div>
+           
+            
             
         </div>
     )

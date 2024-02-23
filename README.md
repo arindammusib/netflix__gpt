@@ -28,6 +28,13 @@
 - fetch  different movies section api from tmdb
 - update store with movies section data
 - styling for main container and secondary container
+- gpt search feature
+- implement toggle functionality using redux store
+- gptserach features
+  - gpt search bar
+  - gpt movie suggestions
+- implement multi language supported search functionality
+   - create dynamic language switch functionality using redux store
 
 
 
