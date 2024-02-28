@@ -13,6 +13,7 @@ const Header=()=>{
     const dispatch=useDispatch();
     const navigate=useNavigate();
     const user=useSelector(store=>store.user);
+    const showGptSearch=useSelector(store=>store.gpt.showGptSearch);
     const handleGptSearch=()=>{
       //toggle search functionality
       dispatch(toggleGptSearch());
@@ -54,20 +55,24 @@ const Header=()=>{
 
     },[]);
     return(
-        <div className="absolute bg-gradient-to-b from-black z-10 px-9 py-3 w-full flex justify-between">
-            <img className="w-44"src={logo} alt="logo"/>
+        <div className="absolute bg-gradient-to-b from-black z-10 px-9 py-3 w-full flex flex-col md:flex-row justify-between">
+            <img className="w-44 mx-auto md:mx-0"src={logo} alt="logo"/>
             {user && (
-              <div className="flex py-4">
+              <div className="flex py-4 justify-between">
+                {showGptSearch && (
                 <select onChange={handleLanguageHandler}className="m-2 p-2 bg-gray-600 text-white">
                   {SUPPORTED_LANGS.map((lang)=>(
                     <option key={lang.identifier} value={lang.identifier} >
                       {lang.name} 
                     </option>
                   ))}
+                
                   
                 </select>
-              <button onClick={handleGptSearch}className="text-white bg-orange-400 rounded-lg px-4 py-2 mx-4">Search Movies</button>
-                <img className="w-10 h-10 "src={user_icon} alt="user-icon"/>
+                )}
+              <button onClick={handleGptSearch}className="text-white bg-orange-400 rounded-lg px-4 py-2 mx-4">
+                {showGptSearch?"Homepage":"Gpt serach"}</button>
+                <img className="hidden md:block w-10 h-10 "src={user_icon} alt="user-icon"/>
             <button onClick={signOutHandler}className="w-10 h-10 text-white">Sign Out</button>
             </div>
             )}

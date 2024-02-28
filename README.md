@@ -35,6 +35,15 @@
   - gpt movie suggestions
 - implement multi language supported search functionality
    - create dynamic language switch functionality using redux store
+- integrate openai api for search
+   - npm i openai for configuration
+- Gpt search API call
+- fetch gpt movie suggestion from tmdb api
+-  reuse of movie list compnents
+- Memoization for saving unnecessary api calls
+- create .env file for security
+- made responsive layout for my app
+
 
 
 

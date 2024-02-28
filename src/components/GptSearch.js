@@ -1,18 +1,22 @@
 import { netflix_bg } from "../common/constants";
-import GptMovieSuggestions from "./GptMovieSuggestions";
 import GptSearchBar from "./GptSearchBar";
+import ShowGptMovieResults from "./ShowGptMovieResults";
+
 
 const GptSearch=()=>{
     return(
-        <div>
-            <div className="absolute -z-10 ">
-            <img src={netflix_bg} alt="logo"/>
+            <><div className="fixed -z-10 ">
+            <img  className="h-screen object-cover md:h-full"src={netflix_bg} alt="logo"/>
             </div>
+        <div className="">
             <GptSearchBar/>
-            <GptMovieSuggestions/>
+            <ShowGptMovieResults/>
+            
+           
             
             
         </div>
+        </>
     )
 
 };
