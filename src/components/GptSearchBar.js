@@ -18,7 +18,7 @@ const GptSearchBar=()=>{
 
     const handleGptSearchClick= async()=>{
         console.log(searchtext.current.value);
-        const gptQuery="act as a movie recommendation system and suggest some movies"+searchtext.current.value+".just give me only five movies name and give examples separated by , for ex: Hanuman,Uddan , idiots";
+        const gptQuery="act as a movie recommendation system and suggest some movies"+searchtext.current.value+".just give me ten  movies name and give examples separated by , for ex: Hanuman,Uddan , idiots";
         //here i will make openai api call to get movie informations
         const gptSearchResults = await openai.chat.completions.create({
             messages: [{ role: 'user', content: gptQuery }],

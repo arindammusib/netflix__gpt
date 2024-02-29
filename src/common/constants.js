@@ -29,11 +29,11 @@ export const API_OPTIONS={
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYzdlOGEwOGNhODA2YmQ0MTIzODk1MWRhYTYyYTk4MiIsInN1YiI6IjY1ZDA5MDY2NjkzZTIwMDE3ZDRmNDMxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dPJtk95ynRKmYCKM-R2C6b6KiUacHGnK6ymrJCYeMEI"
+      Authorization: "Bearer"+process.env.REACT_APP_TMDB_KEY
     },
   };
 
   export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500";
   export default lang;
   export const OPENAI_KEY=process.env.REACT_APP_OPENAI_KEY;
-  //export const OPENAI_KEY="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";
+  
