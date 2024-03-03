@@ -22,7 +22,7 @@ const lang={
 export const SUPPORTED_LANGS=[
   {identifier:"english",name:"English"},
   {identifier:"hindi",name:"Hindi"},
-  {identifier:"bengali",name:"Bengali"},
+  {identifier:"bengali",name:"Bangla"},
 ];
 
 export const API_OPTIONS={
